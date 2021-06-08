@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,28 @@
 		531BDBC826686EA100A03E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531BDBC626686EA100A03E80 /* Main.storyboard */; };
 		531BDBCA26686EA200A03E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531BDBC926686EA200A03E80 /* Assets.xcassets */; };
 		531BDBCD26686EA200A03E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531BDBCB26686EA200A03E80 /* LaunchScreen.storyboard */; };
+		531BDBD62668713B00A03E80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BDBD52668713B00A03E80 /* SignUpViewController.swift */; };
+		531BDBD92668714F00A03E80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BDBD82668714F00A03E80 /* LoginViewController.swift */; };
+		5392A880266CB0A4001E769B /* ExerciseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5392A87F266CB0A4001E769B /* ExerciseInfo.swift */; };
+		53BAB8C1266D638000F46410 /* NutritionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8C0266D638000F46410 /* NutritionInfo.swift */; };
+		53BAB8C4266D9D7500F46410 /* YouTubeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8C3266D9D7500F46410 /* YouTubeConstants.swift */; };
+		53BAB8C7266DA0FD00F46410 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8C6266DA0FD00F46410 /* Video.swift */; };
+		53BAB8CA266DA14500F46410 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8C9266DA14500F46410 /* Model.swift */; };
+		53BAB8CD266DA5B700F46410 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8CC266DA5B700F46410 /* YouTubeViewController.swift */; };
+		53BAB8D0266DB99700F46410 /* YouTubeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8CF266DB99700F46410 /* YouTubeResponse.swift */; };
+		53BAB8D4266DEEC500F46410 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8D3266DEEC500F46410 /* VideoTableViewCell.swift */; };
+		53BAB8E2266E027400F46410 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BAB8E1266E027400F46410 /* DetailViewController.swift */; };
+		53C178C02669465B00CB76E4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C178BF2669465B00CB76E4 /* Utilities.swift */; };
+		53C178C42669A88000CB76E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53C178C32669A88000CB76E4 /* GoogleService-Info.plist */; };
+		53C178EB2669D55E00CB76E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C178EA2669D55E00CB76E4 /* Constants.swift */; };
+		53C178F02669FB7F00CB76E4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C178EF2669FB7F00CB76E4 /* MapViewController.swift */; };
+		53C178F72669FCEC00CB76E4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C178F62669FCEC00CB76E4 /* TabBarViewController.swift */; };
+		53C265F1266B16B3002A5910 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C265F0266B16B3002A5910 /* LocationSearchTable.swift */; };
+		DBB358DC57FCE7B76748735B /* Pods_VigorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942862F6B65FC11CE2DE59FB /* Pods_VigorV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113B7DD03DB22F8C406A294D /* Pods-VigorV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VigorV2.debug.xcconfig"; path = "Target Support Files/Pods-VigorV2/Pods-VigorV2.debug.xcconfig"; sourceTree = "<group>"; };
 		531BDBBD26686EA100A03E80 /* VigorV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VigorV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531BDBC026686EA100A03E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531BDBC226686EA100A03E80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +43,25 @@
 		531BDBC926686EA200A03E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531BDBCC26686EA200A03E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531BDBCE26686EA200A03E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531BDBD52668713B00A03E80 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		531BDBD82668714F00A03E80 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5392A87F266CB0A4001E769B /* ExerciseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfo.swift; sourceTree = "<group>"; };
+		53BAB8C0266D638000F46410 /* NutritionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionInfo.swift; sourceTree = "<group>"; };
+		53BAB8C3266D9D7500F46410 /* YouTubeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeConstants.swift; sourceTree = "<group>"; };
+		53BAB8C6266DA0FD00F46410 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		53BAB8C9266DA14500F46410 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		53BAB8CC266DA5B700F46410 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		53BAB8CF266DB99700F46410 /* YouTubeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeResponse.swift; sourceTree = "<group>"; };
+		53BAB8D3266DEEC500F46410 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		53BAB8E1266E027400F46410 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		53C178BF2669465B00CB76E4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		53C178C32669A88000CB76E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53C178EA2669D55E00CB76E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53C178EF2669FB7F00CB76E4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		53C178F62669FCEC00CB76E4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		53C265F0266B16B3002A5910 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		942862F6B65FC11CE2DE59FB /* Pods_VigorV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VigorV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD46391D12774EE266E99ACC /* Pods-VigorV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VigorV2.release.xcconfig"; path = "Target Support Files/Pods-VigorV2/Pods-VigorV2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB358DC57FCE7B76748735B /* Pods_VigorV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,8 @@
 			children = (
 				531BDBBF26686EA100A03E80 /* VigorV2 */,
 				531BDBBE26686EA100A03E80 /* Products */,
+				6AE7235D6A790E94DEFCF201 /* Pods */,
+				5A03227B24ACFA359A63354A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +99,95 @@
 			children = (
 				531BDBC026686EA100A03E80 /* AppDelegate.swift */,
 				531BDBC226686EA100A03E80 /* SceneDelegate.swift */,
+				53BAB8DB266DEF2F00F46410 /* Helpers */,
+				53BAB8DA266DEF2300F46410 /* Storyboards */,
+				53BAB8D8266DEEF700F46410 /* Models */,
+				53BAB8D7266DEEF000F46410 /* Views */,
+				53BAB8D6266DEECF00F46410 /* YouTube View Controllers */,
+				53C178BE2669462900CB76E4 /* Styling Helpers */,
 				531BDBC426686EA100A03E80 /* ViewController.swift */,
-				531BDBC626686EA100A03E80 /* Main.storyboard */,
 				531BDBC926686EA200A03E80 /* Assets.xcassets */,
-				531BDBCB26686EA200A03E80 /* LaunchScreen.storyboard */,
 				531BDBCE26686EA200A03E80 /* Info.plist */,
+				53C178C32669A88000CB76E4 /* GoogleService-Info.plist */,
+				531BDBD52668713B00A03E80 /* SignUpViewController.swift */,
+				531BDBD82668714F00A03E80 /* LoginViewController.swift */,
+				53C178EF2669FB7F00CB76E4 /* MapViewController.swift */,
+				53C178F62669FCEC00CB76E4 /* TabBarViewController.swift */,
+				53C265F0266B16B3002A5910 /* LocationSearchTable.swift */,
+				5392A87F266CB0A4001E769B /* ExerciseInfo.swift */,
+				53BAB8C0266D638000F46410 /* NutritionInfo.swift */,
 			);
 			path = VigorV2;
+			sourceTree = "<group>";
+		};
+		53BAB8D6266DEECF00F46410 /* YouTube View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53BAB8CC266DA5B700F46410 /* YouTubeViewController.swift */,
+				53BAB8E1266E027400F46410 /* DetailViewController.swift */,
+			);
+			path = "YouTube View Controllers";
+			sourceTree = "<group>";
+		};
+		53BAB8D7266DEEF000F46410 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53BAB8D3266DEEC500F46410 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53BAB8D8266DEEF700F46410 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53BAB8C6266DA0FD00F46410 /* Video.swift */,
+				53BAB8C9266DA14500F46410 /* Model.swift */,
+				53BAB8CF266DB99700F46410 /* YouTubeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53BAB8DA266DEF2300F46410 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				531BDBCB26686EA200A03E80 /* LaunchScreen.storyboard */,
+				531BDBC626686EA100A03E80 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		53BAB8DB266DEF2F00F46410 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				53BAB8C3266D9D7500F46410 /* YouTubeConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		53C178BE2669462900CB76E4 /* Styling Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				53C178BF2669465B00CB76E4 /* Utilities.swift */,
+				53C178EA2669D55E00CB76E4 /* Constants.swift */,
+			);
+			path = "Styling Helpers";
+			sourceTree = "<group>";
+		};
+		5A03227B24ACFA359A63354A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942862F6B65FC11CE2DE59FB /* Pods_VigorV2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AE7235D6A790E94DEFCF201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				113B7DD03DB22F8C406A294D /* Pods-VigorV2.debug.xcconfig */,
+				FD46391D12774EE266E99ACC /* Pods-VigorV2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 531BDBD126686EA200A03E80 /* Build configuration list for PBXNativeTarget "VigorV2" */;
 			buildPhases = (
+				8E97CDA78A4FDEFACCA29485 /* [CP] Check Pods Manifest.lock */,
 				531BDBB926686EA100A03E80 /* Sources */,
 				531BDBBA26686EA100A03E80 /* Frameworks */,
 				531BDBBB26686EA100A03E80 /* Resources */,
+				8FB46F7E1E52AF27F82469A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				531BDBCD26686EA200A03E80 /* LaunchScreen.storyboard in Resources */,
+				53C178C42669A88000CB76E4 /* GoogleService-Info.plist in Resources */,
 				531BDBCA26686EA200A03E80 /* Assets.xcassets in Resources */,
 				531BDBC826686EA100A03E80 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +258,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E97CDA78A4FDEFACCA29485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VigorV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB46F7E1E52AF27F82469A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VigorV2/Pods-VigorV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VigorV2/Pods-VigorV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VigorV2/Pods-VigorV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		531BDBB926686EA100A03E80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				531BDBC526686EA100A03E80 /* ViewController.swift in Sources */,
+				53C265F1266B16B3002A5910 /* LocationSearchTable.swift in Sources */,
 				531BDBC126686EA100A03E80 /* AppDelegate.swift in Sources */,
+				53BAB8C7266DA0FD00F46410 /* Video.swift in Sources */,
+				53C178C02669465B00CB76E4 /* Utilities.swift in Sources */,
+				5392A880266CB0A4001E769B /* ExerciseInfo.swift in Sources */,
+				53BAB8CA266DA14500F46410 /* Model.swift in Sources */,
+				531BDBD62668713B00A03E80 /* SignUpViewController.swift in Sources */,
+				53C178F02669FB7F00CB76E4 /* MapViewController.swift in Sources */,
+				53BAB8D0266DB99700F46410 /* YouTubeResponse.swift in Sources */,
+				53BAB8E2266E027400F46410 /* DetailViewController.swift in Sources */,
+				53BAB8CD266DA5B700F46410 /* YouTubeViewController.swift in Sources */,
+				531BDBD92668714F00A03E80 /* LoginViewController.swift in Sources */,
+				53BAB8C4266D9D7500F46410 /* YouTubeConstants.swift in Sources */,
 				531BDBC326686EA100A03E80 /* SceneDelegate.swift in Sources */,
+				53C178F72669FCEC00CB76E4 /* TabBarViewController.swift in Sources */,
+				53C178EB2669D55E00CB76E4 /* Constants.swift in Sources */,
+				53BAB8C1266D638000F46410 /* NutritionInfo.swift in Sources */,
+				53BAB8D4266DEEC500F46410 /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +467,7 @@
 		};
 		531BDBD226686EA200A03E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113B7DD03DB22F8C406A294D /* Pods-VigorV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +487,7 @@
 		};
 		531BDBD326686EA200A03E80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD46391D12774EE266E99ACC /* Pods-VigorV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
