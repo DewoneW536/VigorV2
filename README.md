@@ -12,8 +12,7 @@ The solution is simple - the new gymFinder and wellness app - Vigor!
 
 In my final project, titled VigorV2, I was successfully able to create an application that assists users in finding an ideal gym in their location and gives a visual representation of distance. I also implemented a way for users to have the perfect list of exercises for when they come to the gym. Often times, people tend to lose motivation because they are not sure what workouts to do that will optimize the health benefits of training. In this application I believe I was able to address several of these concerns by providing a list of youTube videos from a professional trainer that can be played in-app.
 
-Login Page: 
-
+LaunchView Page:
 <img width="250" alt="Screen Shot 2021-06-07 at 4 25 04 PM" src="https://user-images.githubusercontent.com/75241274/121290218-ddbc4c80-c8ab-11eb-8692-20b3280d6ed2.png">
 For this initial Login page, I have a background image to set the tone of the application, the title displayed in a unique font, and two buttons: Sign Up and Log In.
 
