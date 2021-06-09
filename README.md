@@ -14,4 +14,4 @@ In my final project, titled VigorV2, I was successfully able to create an applic
 
 Login Page: 
 
-<img width="547" alt="Screen Shot 2021-06-07 at 4 25 04 PM" src="https://user-images.githubusercontent.com/75241274/121290218-ddbc4c80-c8ab-11eb-8692-20b3280d6ed2.png">
+<img width="250" alt="Screen Shot 2021-06-07 at 4 25 04 PM" src="https://user-images.githubusercontent.com/75241274/121290218-ddbc4c80-c8ab-11eb-8692-20b3280d6ed2.png">
