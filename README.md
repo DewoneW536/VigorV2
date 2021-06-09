@@ -38,5 +38,19 @@ Maps Tab Page:
 <br>
 On this page, we utilize a multitude of different frameworks to find the user’s location, search via the search bar at the top with naturalLanguageQuery and MKLocalSearch, show all results in a tableView that is hidden until a user types in text within the search bar, and a MKAnnotation pin that will be dropped to signal how far away the gym is from the user’s location, along with the name of the gym and this pin is removed and re-added when a user picks a different establishment.
 
+Fitness Page:
+<br>
+<img width="250" alt="Screen Shot 2021-06-07 at 4 16 56 PM" src="https://user-images.githubusercontent.com/75241274/121291733-64722900-c8ae-11eb-9629-770e7736e298.png"><img width="250" alt="Screen Shot 2021-06-07 at 4 17 05 PM" src="https://user-images.githubusercontent.com/75241274/121291756-6f2cbe00-c8ae-11eb-8606-f945fb89bd4b.png"><img width="250" alt="Screen Shot 2021-06-07 at 4 17 27 PM" src="https://user-images.githubusercontent.com/75241274/121291815-87044200-c8ae-11eb-9f45-d7b84c38e4f2.png">
+<br>
+For the fitness page/tab, I decided that instead of giving anecdotal suggestions for workouts that may or may not help users get in shape and feel confident in themselves, instead I would create a tableView which holds a YouTube playlist of great exercises from a professional who trains Athletes and is an athlete himself. In order to successfully do this in terms of UI/design, I needed to place a tableView within a viewController, and within each prototype cell create a stack view that holds a UIImageView which acts as a video thumbnail, put constraints properly, and Utilize a webView that will allow users to play the video within a detail page, and of course add the youTube description, where the YouTuber goes in-depth with the workout regimen he is showing on the application.
+
+Programmatically, to make this idea functional I made several different classes/swift files to do everything: from keeping the feedUrl in one place, to decoding the youTube data api utilizing Decodable and updating thumbnail info via multi-threading/DispatchQueue.main.async. I initially made a swift file titled Video.swift which is where a lot of my Decoding the feed is done. I create codingKeys that take the type of String and CodingKey within the “struct Video: Decodable'' and parse through the Json given by the youTube data API within the initialization of the variables. Models.swift and YouTubeResponse.swift are also files that assist in creating url objects, getting the URLSession, getting dataTasks and parsing the data into video Objects then starting the dataTask. In my YouTubeViewController, I confirm that a user has selected a video, get the reference to the requested video, and set the video to the property of the detail View Controller which is where the video description is and the webView that allows us to connect to YouTube and play said video. I have other functions that reset the tableView data via .reloadData() and only put as many rows as there are data objects in the array videos = [Video]. In the detailViewController, I created an embedded Url string which held the video id  + youTube embed url, and used this to create a url and load the request in the webView for video.
+
+That is the entirety of my app for now; future updates coming soon! I plan to give users the ability to view Social media's of local Gym's for pictures, along with reviews from API's such as Yelp in further iterations.
+
+Thank you!
+
+
+
 
 
