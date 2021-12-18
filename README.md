@@ -1,6 +1,6 @@
 # VigorV2IOS
-This is an iOS native application that allows users to find gyms in their area in the midst of a global pandemic. In the application,
-users will be given a search bar that will utilize Apple's MKLocalSearch API to determine the location of nearby businesses and pin the location, to provide a better understanding of distance from a user's current location. The application also has another aspect to it, which is the ability to watch fitness trainer videos in-app, for effective exercises that will assist in building strength and preventing possible injuries.
+This is a native iOS application that allows users to find gyms in their area in the midst of a global pandemic. In the app,
+users will be given a search bar that will utilize Apple's MKLocalSearch API to determine the location of nearby businesses and pin the location, to provide a better understanding of distance from a user's current location. There is also another aspect to the project, which is the ability to watch fitness trainer videos in-app, for effective exercises that will assist in building strength and preventing possible injuries.
 ## Features
 - Implements Apple MKLocalSearch/CLLocation API's in-app to find the user's location, display it, and show nearby businessees using keywords like "Gym" or "Pizza" for example.
 - Utilizes YouTube Data API via various protocols to parse through the given YouTube playlist given and play the videos in-app, instead of being taken to a 3rd party application (i.e YouTube).
