@@ -9,5 +9,5 @@ users will be given a search bar that will utilize Apple's MKLocalSearch API to 
 - Incorporated webView, UIImageView, and the Decodable framework to enhance user experience and ensure app displays correct info.
 - Integrated Cocoapods into the xcodeproject file in order to extend the breadth of external libraries at our disposal during the production of this application.
 ## Link:
-- For a more detailed explanation, please visit the link provided below:
+- For a more detailed explanation, please visit the link provided here:
 https://www.youtube.com/watch?v=y6MOB4vERDU
