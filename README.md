@@ -1,56 +1,13 @@
 # VigorV2IOS
-
-Problem:
-<br>
-With millions of Americans being forced to shelter in place with city-wide lockdowns due to the pandemic, many of us have become complacent in our sedentary lifestyle and gained an unhealthy amount of weight as a result. This newfound plight of obesity has disseminated throughout the nation faster than it has in years past according to various scholarly sources.
-
-That being said, now that things are beginning to open back up and vaccinations are being rolled out for everyone over the age of 16, life is showing a sign of normalcy...but the impact of covid on health will not be so easily overcome. As we know from this past year, having a considerable amount of weight over what is normal for your body (obesity) can cause extreme complications if an individual is to catch Covid, including permanent lung damage, lack of oxygen, and in the worst case, death.
-
-This brings us to the main problem - People, now more than ever, need to find a gym fast in order to lose the weight gained during covid, but many have such busy lives that do not allow them the time to find a gym in their area or research best practices for weight lose through strength/endurance training.
-
-Solution:
-<br>
-The solution is simple - the new gymFinder and wellness app - Vigor!
-
-In my final project, titled VigorV2, I was successfully able to create an application that assists users in finding an ideal gym in their location and gives a visual representation of distance. I also implemented a way for users to have the perfect list of exercises for when they come to the gym. Often times, people tend to lose motivation because they are not sure what workouts to do that will optimize the health benefits of training. In this application I believe I was able to address several of these concerns by providing a list of youTube videos from a professional trainer that can be played in-app.
-
-LaunchView Page:
-<br>
-<img width="250" alt="Screen Shot 2021-06-07 at 4 25 04 PM" src="https://user-images.githubusercontent.com/75241274/121290218-ddbc4c80-c8ab-11eb-8692-20b3280d6ed2.png">
-<br>
-For this initial Login page, I have a background image to set the tone of the application, the title displayed in a unique font, and two buttons: Sign Up and Log In.
-
-Sign Up Page:
-<br>
-<img width="250" alt="Screen Shot 2021-06-07 at 4 15 36 PM" src="https://user-images.githubusercontent.com/75241274/121290422-34c22180-c8ac-11eb-8210-dba832be70dd.png">
-<br>
-On the Sign Up page, I created multiple textFields for users to enter their personal information (first name, last name, email, password) along with a Sign Up button. This portion of the project is where I begin to involve CocoaPods and FireBase Authorization, as when a user presses the sign up button, their information is saved in the online FireBase Database so that when they come back to the app later to log in, their email and password is on file. In order to do this, I first Installed CocoaPods and added it to my .xcodeproj file, turning it into a .xcworkspace file which allows me to use third party applications like Google’s FireBase.
-
-Login Page:
-<br>
-<img width="250" alt="Screen Shot 2021-06-07 at 4 14 59 PM" src="https://user-images.githubusercontent.com/75241274/121290805-db0e2700-c8ac-11eb-819d-94d87d46846c.png">
-<br>
-For the Login page, it is pretty similar to what I did with the Sign Up page in terms of the formatting of buttons and textFields, only the functionality of the Login button is different and in this page, I utilize the Auth.auth().signIn(...) method from Firebase to sign users in, checking that their info is already in the database. If not, the red Error message at the bottom will give users a more detailed explanation on why they are unable to login successfully. As with the Sign Up button, the Login button will take users to the main page if the database is able to find their credentials.
-
-Maps Tab Page:
-<br>
-<img width="250" alt="Screen Shot 2021-06-07 at 4 16 09 PM" src="https://user-images.githubusercontent.com/75241274/121290976-1dcfff00-c8ad-11eb-8b42-da516a161bea.png"> <img width="250" alt="Screen Shot 2021-06-07 at 4 16 17 PM" src="https://user-images.githubusercontent.com/75241274/121291008-29232a80-c8ad-11eb-8bde-ea7455ac7d9f.png"> <img width="250" alt="Screen Shot 2021-06-07 at 4 16 28 PM" src="https://user-images.githubusercontent.com/75241274/121291028-32ac9280-c8ad-11eb-8d2f-210f8f8bee5a.png">
-<br>
-On this page, we utilize a multitude of different frameworks to find the user’s location, search via the search bar at the top with naturalLanguageQuery and MKLocalSearch, show all results in a tableView that is hidden until a user types in text within the search bar, and a MKAnnotation pin that will be dropped to signal how far away the gym is from the user’s location, along with the name of the gym and this pin is removed and re-added when a user picks a different establishment.
-
-Fitness Page:
-<br>
-<img width="250" alt="Screen Shot 2021-06-07 at 4 16 56 PM" src="https://user-images.githubusercontent.com/75241274/121291733-64722900-c8ae-11eb-9629-770e7736e298.png"><img width="250" alt="Screen Shot 2021-06-07 at 4 17 05 PM" src="https://user-images.githubusercontent.com/75241274/121291756-6f2cbe00-c8ae-11eb-8606-f945fb89bd4b.png"><img width="250" alt="Screen Shot 2021-06-07 at 4 17 27 PM" src="https://user-images.githubusercontent.com/75241274/121291815-87044200-c8ae-11eb-9f45-d7b84c38e4f2.png">
-<br>
-For the fitness page/tab, I decided that instead of giving anecdotal suggestions for workouts that may or may not help users get in shape and feel confident in themselves, instead I would create a tableView which holds a YouTube playlist of great exercises from a professional who trains Athletes and is an athlete himself. In order to successfully do this in terms of UI/design, I needed to place a tableView within a viewController, and within each prototype cell create a stack view that holds a UIImageView which acts as a video thumbnail, put constraints properly, and Utilize a webView that will allow users to play the video within a detail page, and of course add the youTube description, where the YouTuber goes in-depth with the workout regimen he is showing on the application.
-
-Programmatically, to make this idea functional I made several different classes/swift files to do everything: from keeping the feedUrl in one place, to decoding the youTube data api utilizing Decodable and updating thumbnail info via multi-threading/DispatchQueue.main.async. I initially made a swift file titled Video.swift which is where a lot of my Decoding the feed is done. I create codingKeys that take the type of String and CodingKey within the “struct Video: Decodable'' and parse through the Json given by the youTube data API within the initialization of the variables. Models.swift and YouTubeResponse.swift are also files that assist in creating url objects, getting the URLSession, getting dataTasks and parsing the data into video Objects then starting the dataTask. In my YouTubeViewController, I confirm that a user has selected a video, get the reference to the requested video, and set the video to the property of the detail View Controller which is where the video description is and the webView that allows us to connect to YouTube and play said video. I have other functions that reset the tableView data via .reloadData() and only put as many rows as there are data objects in the array videos = [Video]. In the detailViewController, I created an embedded Url string which held the video id  + youTube embed url, and used this to create a url and load the request in the webView for video.
-
-That is the entirety of my app for now; future updates coming soon! I plan to give users the ability to view Social media's of local Gym's for pictures, along with reviews from API's such as Yelp in further iterations.
-
-Thank you!
-
-
-
-
-
+This is an iOS native application that allows users to find gyms in their area in the midst of a global pandemic. In the application,
+users will be given a search bar that will utilize Apple's MKLocalSearch API to determine the location of nearby businesses and pin the location, to provide a better understanding of distance from a user's current location. The application also has another aspect to it, which is the ability to watch fitness trainer videos in-app, for effective exercises that will assist in building strength and preventing possible injuries.
+## Features
+- Implements Apple MKLocalSearch/CLLocation API's in-app to find the user's location, display it, and show nearby businessees using keywords like "Gym" or "Pizza" for example.
+- Utilizes YouTube Data API via various protocols to parse through the given YouTube playlist given and play the videos in-app, instead of being taken to a 3rd party application (i.e YouTube).
+- Gives accurate depiction of distance between user's current location and the organization selected. This is done by employing MKMapView to display all locations in an Apple Maps format within the app, giving numerical distance in terms of minutes, while also displaying the quickest route to said location.
+- Permits the creation of multiple user accounts via the employment of popular Google database known as fireBase. To utilize this service, it was necessary to install the FireBase framework within our application to use it's features inline.
+- Incorporated webView, UIImageView, and the Decodable framework to enhance user experience and ensure app displays correct info.
+- Integrated Cocoapods into the xcodeproject file in order to extend the breadth of external libraries at our disposal during the production of this application.
+## Link:
+- For a more detailed explanation, please visit the link provided below:
+https://www.youtube.com/watch?v=y6MOB4vERDU
